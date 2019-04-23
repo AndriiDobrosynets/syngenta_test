@@ -1,0 +1,14 @@
+{
+    "dev": {
+        "awscloudformation": {
+            "AuthRoleName": "syngenta-20190423220630-authRole",
+            "UnauthRoleArn": "arn:aws:iam::257760188770:role/syngenta-20190423220630-unauthRole",
+            "AuthRoleArn": "arn:aws:iam::257760188770:role/syngenta-20190423220630-authRole",
+            "Region": "us-east-1",
+            "DeploymentBucketName": "syngenta-20190423220630-deployment",
+            "UnauthRoleName": "syngenta-20190423220630-unauthRole",
+            "StackName": "syngenta-20190423220630",
+            "StackId": "arn:aws:cloudformation:us-east-1:257760188770:stack/syngenta-20190423220630/e47bf8b0-65fa-11e9-9fba-0a3a983b5e88"
+        }
+    }
+}
