@@ -1,0 +1,48 @@
+{
+    "paths": [
+        {
+            "name": "/crops",
+            "lambdaFunction": "syngenta",
+            "privacy": {
+                "protected": true,
+                "auth": [
+                    "/POST",
+                    "/GET",
+                    "/PUT",
+                    "/PATCH",
+                    "/DELETE"
+                ],
+                "unauth": [
+                    "/POST",
+                    "/GET",
+                    "/PUT",
+                    "/PATCH",
+                    "/DELETE"
+                ]
+            }
+        }
+    ],
+    "resourceName": "syngenta",
+    "apiName": "syngenta",
+    "functionArns": [
+        {
+            "lambdaFunction": "syngenta"
+        }
+    ],
+    "privacy": {
+        "auth": 1,
+        "unauth": 1,
+        "authRoleName": "syngenta-20190423220630-authRole",
+        "unAuthRoleName": "syngenta-20190423220630-unauthRole"
+    },
+    "dependsOn": [
+        {
+            "category": "function",
+            "resourceName": "syngenta",
+            "attributes": [
+                "Name",
+                "Arn"
+            ]
+        }
+    ]
+}

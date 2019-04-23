@@ -1,0 +1,72 @@
+{
+    "identityPoolName": "syngenta_identitypool_813fe1f4",
+    "allowUnauthenticatedIdentities": true,
+    "lambdaLogPolicy": "syngenta_lambda_log_policy",
+    "openIdLambdaRoleName": "syngenta_openid_lambda_role",
+    "openIdRolePolicy": "syngenta_openid_pass_role_policy",
+    "openIdLambdaIAMPolicy": "syngenta_openid_lambda_iam_policy",
+    "openIdLogPolicy": "syngenta_openid_lambda_log_policy",
+    "userPoolName": "syngenta_userpool_813fe1f4",
+    "autoVerifiedAttributes": [
+        "email"
+    ],
+    "mfaConfiguration": "OFF",
+    "mfaTypes": [
+        "SMS Text Message"
+    ],
+    "roleName": "syngenta_sns-role",
+    "roleExternalId": "syngenta_role_external_id",
+    "policyName": "syngenta-sns-policy",
+    "smsAuthenticationMessage": "Your authentication code is {####}",
+    "smsVerificationMessage": "Your verification code is {####}",
+    "emailVerificationSubject": "Your verification code",
+    "emailVerificationMessage": "Your verification code is {####}",
+    "defaultPasswordPolicy": false,
+    "passwordPolicyMinLength": 8,
+    "passwordPolicyCharacters": [
+        "Requires Lowercase",
+        "Requires Uppercase",
+        "Requires Numbers",
+        "Requires Symbols"
+    ],
+    "requiredAttributes": [
+        "email"
+    ],
+    "userpoolClientName": "syngenta_app_client",
+    "userpoolClientGenerateSecret": true,
+    "userpoolClientRefreshTokenValidity": 30,
+    "userpoolClientWriteAttributes": [
+        "email"
+    ],
+    "userpoolClientReadAttributes": [
+        "email"
+    ],
+    "mfaLambdaRole": "syngenta_totp_lambda_role",
+    "mfaLambdaLogPolicy": "syngenta_totp_lambda_log_policy",
+    "mfaPassRolePolicy": "syngenta_totp_pass_role_policy",
+    "mfaLambdaIAMPolicy": "syngenta_totp_lambda_iam_policy",
+    "userpoolClientLambdaRole": "syngenta_userpoolclient_lambda_role",
+    "userpoolClientLogPolicy": "syngenta_userpoolclient_lambda_log_policy",
+    "userpoolClientLambdaPolicy": "syngenta_userpoolclient_lambda_iam_policy",
+    "userpoolClientSetAttributes": false,
+    "authSelections": "identityPoolAndUserPool",
+    "resourceName": "cognitof2bf3932",
+    "authRoleName": {
+        "Ref": "AuthRoleName"
+    },
+    "unauthRoleName": {
+        "Ref": "UnauthRoleName"
+    },
+    "authRoleArn": {
+        "Fn::GetAtt": [
+            "AuthRole",
+            "Arn"
+        ]
+    },
+    "unauthRoleArn": {
+        "Fn::GetAtt": [
+            "UnauthRole",
+            "Arn"
+        ]
+    }
+}

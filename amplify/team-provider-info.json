@@ -9,6 +9,11 @@
             "UnauthRoleName": "syngenta-20190423220630-unauthRole",
             "StackName": "syngenta-20190423220630",
             "StackId": "arn:aws:cloudformation:us-east-1:257760188770:stack/syngenta-20190423220630/e47bf8b0-65fa-11e9-9fba-0a3a983b5e88"
+        },
+        "categories": {
+            "auth": {
+                "cognitof2bf3932": {}
+            }
         }
     }
 }
