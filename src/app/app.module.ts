@@ -7,6 +7,8 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { MainComponent } from './main/main.component';
+import { ComunicatorService } from './comunicator.service';
+
 
 @NgModule({
   declarations: [
@@ -20,7 +22,7 @@ import { MainComponent } from './main/main.component';
     SortableModule.forRoot(),
     AppRoutingModule
   ],
-  providers: [],
+  providers: [ComunicatorService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
