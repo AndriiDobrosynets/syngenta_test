@@ -15,5 +15,22 @@
                 "cognitof2bf3932": {}
             }
         }
+    },
+    "testenv": {
+        "awscloudformation": {
+            "AuthRoleName": "syngenta-20190424165812-authRole",
+            "UnauthRoleArn": "arn:aws:iam::257760188770:role/syngenta-20190424165812-unauthRole",
+            "AuthRoleArn": "arn:aws:iam::257760188770:role/syngenta-20190424165812-authRole",
+            "Region": "us-east-1",
+            "DeploymentBucketName": "syngenta-20190424165812-deployment",
+            "UnauthRoleName": "syngenta-20190424165812-unauthRole",
+            "StackName": "syngenta-20190424165812",
+            "StackId": "arn:aws:cloudformation:us-east-1:257760188770:stack/syngenta-20190424165812/0067e8b0-6699-11e9-91c2-12dffdf25cac"
+        },
+        "categories": {
+            "auth": {
+                "cognitof2bf3932": {}
+            }
+        }
     }
 }

@@ -59,8 +59,8 @@
 				"Runtime": "nodejs8.10",
 				"Timeout": "25",
 				"Code": {
-					"S3Bucket": "syngenta-20190423220630-deployment",
-					"S3Key": "amplify-builds/syngenta-1556113517-latest-build.zip"
+					"S3Bucket": "syngenta-20190424165812-deployment",
+					"S3Key": "amplify-builds/syngenta-1556114470-latest-build.zip"
 				}
 			}
 		},
