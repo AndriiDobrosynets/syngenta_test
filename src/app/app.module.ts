@@ -5,10 +5,14 @@ import { SortableModule } from 'ngx-bootstrap/sortable';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { NavbarComponent } from './navbar/navbar.component';
+import { MainComponent } from './main/main.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    NavbarComponent,
+    MainComponent
   ],
   imports: [
     BrowserModule,
